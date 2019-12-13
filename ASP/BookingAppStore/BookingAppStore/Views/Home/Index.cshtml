@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@model IEnumerable<BookingAppStore.Models.Book>
+
+
+<div class="jumbotron">
+    <h2>Contacts book</h2>
+</div>
+
+
+<div>
+
+    <h2>Contact list</h2>
+
+            <table class="table">
+                <tr>
+                    <td>
+                        <h5><b>Name</b></h5>
+                    </td>
+                    <td>
+                        <h5><b>Surname</b></h5>
+                    </td>
+                    <td>
+                        <h5><b>Phone number</b></h5>
+                    </td>
+                    <td>
+                        <h5><b>Email</b></h5>
+                    </td>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+    </table>
+    <table class="table">
+        @foreach (var b in ViewBag.Books)
+        {
+
+            <tr>
+                <td><p>@b.Name</p></td>
+                <td><p>@b.Surname</p></td>
+                <td><p>@b.Phone</p></td>
+                <td></td>
+                <td><p>@b.Email</p></td>
+                <td><p><a href="~/Photo/@b.Image" target="_blank">Photo</a></p></td>
+
+            </tr>
+        }
+
+    </table>
+
+</div>

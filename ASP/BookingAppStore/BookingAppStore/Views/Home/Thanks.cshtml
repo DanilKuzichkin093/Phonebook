@@ -1,0 +1,50 @@
+﻿@model BookingAppStore.Models.Purchase
+@{
+    ViewBag.Title = "Thanks";
+}
+
+
+
+<body>
+    <div>
+        
+
+        @{
+            try
+            {
+                //string passwordOriginal = "Esthete2711";
+                <h2>Спасибо за покупку @ViewBag.BookName, @ViewBag.Name</h2>
+
+                WebMail.SmtpServer = "smtp.gmail.com";
+                WebMail.SmtpPort = 25;
+                WebMail.EnableSsl = true;
+                WebMail.UserName = "nikitatsaika2@gmail.com";
+                WebMail.Password = "Naspas1234";
+                WebMail.From = "nikitatsaika2@gmail.com";
+
+                WebMail.Send(ViewBag.Adress, "Оповещение о покупке книги.", String.Format("Уважаемый " +
+                    " {0}, Спасибо за покупку. <br> Вы приобрели {1}.", ViewBag.Name,
+                    ViewBag.BookName));
+
+            }
+
+            catch (Exception)
+            {
+
+                @: <b>К сожалению не удалось отправить письмо на вашу почту</b>
+            }
+
+
+
+
+
+
+        }
+
+
+
+    
+    </div>
+
+</body>
+

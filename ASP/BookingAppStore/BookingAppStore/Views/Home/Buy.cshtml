@@ -1,0 +1,42 @@
+﻿@model BookingAppStore.Models.Purchase
+@{
+    ViewBag.Title = "Покупка";
+}
+
+<h2>Купить</h2>
+
+<div>
+
+    <h3>Форма регистрации при покупке </h3>
+    <form method="post">
+        <input type="hidden" value="@ViewBag.BookId" name="BookId" />
+        @*<table>
+                <tr>
+                    <td><p>Name</p></td>
+                    <td><input type="text" name="Имя" /></td>
+                </tr>
+
+                <tr>
+                    <td><p>aadress</p></td>
+                    <td>
+                        <input type="text" name="Адрес" />
+                    </td>
+                </tr>
+                <tr><td><input type="submit" value="Отправить" /></td><td></td></tr>
+
+            </table>*@
+        @using (Html.BeginForm())
+        {
+            <p> Ваше Имя:@Html.TextBoxFor(x => x.Person) </p>
+            <p> Ваш Майл:@Html.TextBoxFor(x => x.Email) </p>
+            <p> Ваш номер:@Html.TextBoxFor(x => x.Phone) </p>
+            <input type="submit" value="Купить книгу" />
+        }
+
+
+    </form>
+
+
+
+
+</div>

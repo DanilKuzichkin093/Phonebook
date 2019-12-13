@@ -1,0 +1,73 @@
+<book>
+  <contact>
+    <id>1</id>
+    <name>Danil</name>
+    <surname>Kuzichkin</surname>
+    <phone>37251935025</phone>
+    <email>Kuzichkin@mail.ru</email>
+	<gender>Male</gender>
+  </contact>
+  
+  <contact>
+    <id>2</id>
+    <name>Ruslan</name>
+    <surname>Kudrjavtsev</surname>
+    <phone>37252935024</phone>
+    <email>Kudrjavtsev@mail.ru</email>
+	<gender>Male</gender>
+  </contact>
+
+  <contact>
+    <id>3</id>
+    <name>Artem</name>
+    <surname>Dmitrijev</surname>
+    <phone>37263935023</phone>
+    <email>Dmitrijev@mail.ru</email>
+	<gender>Male</gender>
+  </contact>
+
+  <contact>
+    <id>4</id>
+    <name>Artur</name>
+    <surname>Shumilo</surname>
+    <phone>37264935022</phone>
+    <email>Shumilo@gmail.ru</email>
+	<gender>Male</gender>
+  </contact>
+
+  <contact>
+    <id>5</id>
+    <name>Oleg</name>
+    <surname>Avtomobilev</surname>
+    <phone>37265935021</phone>
+    <email>Avtomobilev@mail.ru</email>
+	<gender>Male</gender>
+  </contact>
+  
+  <contact>
+    <id>6</id>
+    <name>Vadim</name>
+    <surname>Vasilchenko</surname>
+    <phone>37266935020</phone>
+    <email>Bitcoiner@mail.ru</email>
+	<gender>Male</gender>
+  </contact>
+  
+  <contact>
+    <id>7</id>
+    <name>Nikol</name>
+    <surname>Kolpakova</surname>
+    <phone>37267934050</phone>
+    <email>Nikakolpakova@mail.ru</email>
+	<gender>female</gender>
+  </contact>
+  
+    <contact>
+    <id>8</id>
+    <name>Daniella</name>
+    <surname>Kolpakova</surname>
+    <phone>37268934060</phone>
+    <email>Danakolpakova@mail.ru</email>
+	<gender>female</gender>
+  </contact>
+</book>

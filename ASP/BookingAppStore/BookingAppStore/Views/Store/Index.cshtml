@@ -1,0 +1,52 @@
+﻿@model IEnumerable<BookingAppStore.Models.Book>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+    <table class="table">
+        <tr>
+            <th>
+                <h5><b>Name</b></h5>
+            </th>
+            <th>
+                <h5><b>Surname</b></h5>
+            </th>
+            <th>
+                <h5><b>Phone number</b></h5>
+            </th>        
+            <th>
+                <h5><b>Email</b></h5>
+            </th>
+            <th></th>
+        </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Surname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+            <br>
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+        </td>
+    </tr>
+}
+    <a>
+        @Html.ActionLink("Create new contact    ", "Create")
+    </a>
+</table>
